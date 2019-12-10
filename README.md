@@ -1,2 +1,2 @@
 # daily-project
-项目结合
+项目集合
