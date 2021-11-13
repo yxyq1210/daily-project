@@ -11,7 +11,7 @@ import java.util.Map;
 public class Thread01Test {
 
     @Test
-    public void Test01() {
+    public void test01() {
 
         class MemoryCell {
             private Object defaultValue;
@@ -27,9 +27,22 @@ public class Thread01Test {
     }
 
     @Test
-    public void TestO2() {
+    public void testO2() {
         Map<Integer, List<String>> map = new HashMap<>();
         
     }
+
+   /* public static void main(String[] args) throws InterruptedException {
+        List<Thread> threads = IntStream.range(1, 3).mapToObj(Thread01Test::create).collect(Collectors.toList());
+        threads.forEach(Thread::start);
+        for(Thread thread:threads){
+            thread.join();
+        }
+        for (int i = 0; i < 10; i++) {
+            System.out.println(Thread.currentThread().getName()+"%"+i);
+            TimeUnit.SECONDS.sleep(1);
+        }
+    }*/
+
 
 }
